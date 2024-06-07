@@ -3,9 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRI.Clients", "IRI.Clients", "{20B39D44-C316-45CD-8385-87FD350ABB5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRI.Apis", "IRI.Apis", "{0BA5BF95-D7B4-4938-B290-FD8DD19C3CD0}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "IRI.Clients.Web", "IRI.Clients.Web\IRI.Clients.Web.esproj", "{0E502435-D18C-4924-9A46-F2764533C5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRI.Apis.Principal", "IRI.Apis.Principal\IRI.Apis.Principal.csproj", "{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E502435-D18C-4924-9A46-F2764533C5B2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E502435-D18C-4924-9A46-F2764533C5B2} = {20B39D44-C316-45CD-8385-87FD350ABB5C}
+		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F} = {0BA5BF95-D7B4-4938-B290-FD8DD19C3CD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A04E1A37-9CAB-478D-B2FE-EBD5B474066B}
