@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A11946EE-FEE8-41A4-A826-BB0C295AFF44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRI.Clients", "IRI.Clients", "{EE5286E8-5777-4A35-AE19-3796806CD64B}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "IRI.Clients.Web", "IRI.Clients.Web\IRI.Clients.Web.esproj", "{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +29,19 @@ Global
 		{A11946EE-FEE8-41A4-A826-BB0C295AFF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A11946EE-FEE8-41A4-A826-BB0C295AFF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A11946EE-FEE8-41A4-A826-BB0C295AFF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B0E31AA4-C592-4D42-9F6A-3BC2A210009F} = {0BA5BF95-D7B4-4938-B290-FD8DD19C3CD0}
+		{41F3C5BB-A755-4FED-85A4-5F5E4531ACE5} = {EE5286E8-5777-4A35-AE19-3796806CD64B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A04E1A37-9CAB-478D-B2FE-EBD5B474066B}
