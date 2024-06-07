@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRI.Clients", "IRI.Clients", "{20B39D44-C316-45CD-8385-87FD350ABB5C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IRI.Apis", "IRI.Apis", "{0BA5BF95-D7B4-4938-B290-FD8DD19C3CD0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRI.Apis.Principal", "IRI.Apis.Principal\IRI.Apis.Principal.csproj", "{B0E31AA4-C592-4D42-9F6A-3BC2A210009F}"
