@@ -8,5 +8,17 @@ services:
       context: .
       dockerfile: IRI.Apis.Principal/Dockerfile
     ports:
-        - "5000:5000"
-        - "5001:5001"
+        - 5000:5000
+        - 5001:5001
+
+  iri.clients.web:
+    container_name: client.angular
+    image: iri.clients.web
+    build:
+      context: .
+      dockerfile: IRI.Clients.Web/Dockerfile
+    ports:
+      - 4200:4200
+    volumes:
+      - ./iri.clients.web:/project
+      - /project/node_modules 
