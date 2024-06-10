@@ -101,7 +101,7 @@ The architecture of the solution must allow for future scalability and maintenan
 Good luck and may the force be with you on this mission.
 </p>
 
-## ITIClientsWeb
+## ITI.Clients.Web, principal web client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
@@ -129,11 +129,39 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## Docker section
+## Dockerization
 
-Section
+<p align="justify">
+    Section to have notes about application deployments in Docker containers and these in a    multi-container, for any development and/or productive deployment environment.
+</p>
 
-## For development
+### For development environment
+
+- Build Docker images
+
+```bash
+  docker-compose -p iri-debug build
+```
+
+- Run containers in detached mode
+
+```bash
+  docker-compose -p iri-debug up -d
+```
+
+- Get angular application, principal web client
+
+```bash
+  http://localhost:4200/
+```
+
+- Get web api, principal api
+
+```bash
+  https://localhost:5001/swagger/index.html
+```
+
+---
 
 <p align="center">
   <a href="https://skillicons.dev">
