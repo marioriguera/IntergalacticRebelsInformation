@@ -3,7 +3,7 @@ version: '3.4'
 services:
   iri.apis.principal:
     container_name: principal.api
-    image: ${DOCKER_REGISTRY-}iriapisprincipal
+    image: iri.apis.principal
     build:
       context: .
       dockerfile: IRI.Apis.Principal/Dockerfile
@@ -17,6 +17,9 @@ services:
     build:
       context: .
       dockerfile: IRI.Clients.Web/Dockerfile
+      args:
+        - "PACKAGE_JSON=iri.clients.web/package.json"
+        - "PACKAGE_LOCK_JSON=iri.clients.web/package-lock.json"
     ports:
       - 4200:4200
     volumes:
