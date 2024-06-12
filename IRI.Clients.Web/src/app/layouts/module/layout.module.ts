@@ -1,7 +1,7 @@
 /**
  * Angular imports section.
  */
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -28,8 +28,9 @@ import { DefaultComponent } from '../default/default.component';
     CommonModule,
     SharedModule
   ],
-  exports:[
+  exports: [
     DefaultComponent
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LayoutModule { }
