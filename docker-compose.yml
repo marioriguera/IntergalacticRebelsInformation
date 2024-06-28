@@ -1,16 +1,6 @@
 version: '3.4'
 
 services:
-  iri.apis.principal:
-    container_name: principal.api
-    image: iri.apis.principal
-    build:
-      context: .
-      dockerfile: IRI.Apis.Principal/Dockerfile
-    ports:
-        - 5000:5000
-        - 5001:5001
-
   iri.clients.web:
     container_name: client.angular
     image: iri.clients.web
@@ -25,3 +15,21 @@ services:
     volumes:
       - ./iri.clients.web:/project
       - /project/node_modules 
+
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+        ACCEPT_EULA: "Y"
+        MSSQL_SA_PASSWORD: "SApA55w0rd2024"
+        MSSQL_PID: Developer
+    ports:
+        - 1:1433 
+
+  iri.apis.rebels.apiweb:
+    image: ${DOCKER_REGISTRY-}iriapisrebelsapiweb
+    build:
+      context: .
+      dockerfile: IRI.Apis.Rebels.ApiWeb/Dockerfile
+    ports:
+        - 5000:5000
+        - 5001:5001

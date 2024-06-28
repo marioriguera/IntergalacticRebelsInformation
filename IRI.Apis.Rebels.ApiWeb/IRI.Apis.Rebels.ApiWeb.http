@@ -1,0 +1,6 @@
+@IRI.Apis.Rebels.ApiWeb_HostAddress = http://localhost:5267
+
+GET {{IRI.Apis.Rebels.ApiWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -4,7 +4,9 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "iri.apis.principal": "StartDebugging"
+        "iri.apis.principal": "StartDebugging",
+        "iri.apis.rebels.apiweb": "StartDebugging",
+        "iri.apis.security.apiweb": "StartDebugging"
       }
     }
   }

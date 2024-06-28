@@ -1,0 +1,6 @@
+@IRI.Apis.Security.ApiWeb_HostAddress = http://localhost:5101
+
+GET {{IRI.Apis.Security.ApiWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

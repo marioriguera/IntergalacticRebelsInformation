@@ -1,1 +1,7 @@
-<p>manager.security works!</p>
+<ng-container *ngIf="true; else logoutTemplate">
+    <app-login></app-login>
+</ng-container>
+<ng-template #logoutTemplate>
+    <app-logout></app-logout>
+</ng-template>
+
