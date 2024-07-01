@@ -4,9 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>8a87ceab-06d6-4330-801d-04bb08bff99e</UserSecretsId>
+    <UserSecretsId>e1944dff-e978-4f4e-9d42-0cf5d2d1e142</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <StartupObject></StartupObject>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>

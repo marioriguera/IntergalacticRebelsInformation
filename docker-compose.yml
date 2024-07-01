@@ -1,6 +1,24 @@
 version: '3.4'
 
 services:
+  iri.apis.rebels.apiweb:
+    image: iriapisrebelsapiweb
+    build:
+      context: .
+      dockerfile: IRI.Apis.Rebels.ApiWeb/Dockerfile
+    ports:
+        - 5000:5000
+        - 5001:5001
+
+  iri.apis.security.apiweb:
+    image: iriapissecurityapiweb
+    build:
+      context: .
+      dockerfile: IRI.Apis.Security.ApiWeb/Dockerfile
+    ports:
+        - 5002:5000
+        - 5003:5001
+
   iri.clients.web:
     container_name: client.angular
     image: iri.clients.web
@@ -25,11 +43,3 @@ services:
     ports:
         - 1:1433 
 
-  iri.apis.rebels.apiweb:
-    image: ${DOCKER_REGISTRY-}iriapisrebelsapiweb
-    build:
-      context: .
-      dockerfile: IRI.Apis.Rebels.ApiWeb/Dockerfile
-    ports:
-        - 5000:5000
-        - 5001:5001
