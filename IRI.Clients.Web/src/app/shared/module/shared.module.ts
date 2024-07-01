@@ -3,6 +3,7 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 /**
  * Third party modules
@@ -17,14 +18,17 @@ import { CommonModule } from '@angular/common';
 */
 import { PrincipalToolbarComponent } from '../components/tools_bars/principal-toolbar/principal-toolbar.component';
 import { FooterComponent } from '../components/tools_bars/footer/footer.component';
+import { PageNotFoundComponent } from '../views/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     PrincipalToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     PrincipalToolbarComponent,

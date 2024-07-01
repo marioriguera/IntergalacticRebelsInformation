@@ -11,15 +11,17 @@ import { CommonModule } from '@angular/common';
 /**
  * Application imports section
  */
+import { CoreRoutingModule } from '../core-routing/core-routing.module';
 import { SharedModule } from '../../shared/module/shared.module';
 
 /**
  * Components imports section
  */
-import { ManagerSecurityComponent } from '../security/components/manager.security/manager.security.component';
+import { LoginViewComponent } from '../security/views/login-view/login-view.component';
 import { LoginComponent } from '../security/components/login/login.component';
 import { LogoutComponent } from '../security/components/logout/logout.component';
-import { CoreRoutingModule } from '../core-routing/core-routing.module';
+import { ManagerSecurityComponent } from '../security/components/manager.security/manager.security.component';
+import { LogoutViewComponent } from '../security/views/logout-view/logout-view.component';
 
 
 
@@ -27,12 +29,14 @@ import { CoreRoutingModule } from '../core-routing/core-routing.module';
   declarations: [
     ManagerSecurityComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    LoginViewComponent,
+    LogoutViewComponent,
   ],
   imports: [
     CommonModule,
+    CoreRoutingModule,
     SharedModule,
-    CoreRoutingModule
   ]
 })
 export class CoreModule { }

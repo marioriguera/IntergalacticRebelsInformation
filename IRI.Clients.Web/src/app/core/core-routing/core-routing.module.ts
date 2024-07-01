@@ -1,22 +1,37 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultComponent } from '../../layouts/default/default.component';
+import { LoginViewComponent } from '../security/views/login-view/login-view.component';
+import { LogoutViewComponent } from '../security/views/logout-view/logout-view.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
-    component: DefaultComponent
-  },
-  {
-    path: '**',
-    component: DefaultComponent
+    children: [
+      {
+        path: 'login',
+        component: LoginViewComponent,
+        data: {
+          animation: 'LoginPage'
+        }
+      },
+      {
+        path: 'logout',
+        component: LogoutViewComponent,
+        data: {
+          animation: 'LogoutPage'
+        }
+      }
+    ]
   }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(routes),
-  ],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CoreRoutingModule { }
+export class CoreRoutingModule {
+  constructor() {
+    console.warn('En CoreRoutingModule:');
+    console.warn(routes);
+  }
+}

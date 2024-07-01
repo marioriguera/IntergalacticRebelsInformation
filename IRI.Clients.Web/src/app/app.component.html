@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<app-principal-toolbar></app-principal-toolbar>
+<main class="w-100 h-100" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</main>
+<app-footer></app-footer>

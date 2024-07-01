@@ -3,6 +3,7 @@
  */
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /**
  * Third party modules.
@@ -26,6 +27,7 @@ import { SharedModule } from './shared/module/shared.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
     LayoutModule
